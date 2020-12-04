@@ -364,7 +364,7 @@ class Trees {
   private function getCoordinate($x, $y) {
     $length = strlen($this->map[$y]);
     
-    if ($x > $length) {
+    if ($x >= $length) {
       $x = ($x - (floor(($x)  / $length) * $length));
     }
     
