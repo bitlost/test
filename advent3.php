@@ -348,7 +348,7 @@ class Trees {
     $tree_count = 0;
     
     while ($this->cur_y < $this->lines) {      
-      if ($this->isTree($this->cur_x, $this->cur_y)) $trees++;
+      if ($this->isTree($this->cur_x, $this->cur_y)) $tree_count++;
       $this->cur_x += $right;
       $this->cur_y += $down;
     }
